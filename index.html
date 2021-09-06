@@ -7,22 +7,39 @@
     <meta  name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <title > Passinho do Romano </title>
     <link  rel = "stylesheet" href = " style.css ">
-    <script  src = "passinho.js" feder> </script>
+    <script  src = "passinho.js" defer> </script>
 </head >
 
 <body>
-    <div  class = "formulario">
-        <header>
-            teste no css
-        </header>
-        <section>
-            
-        </section>
-    </div>
+    <header class = "formulario">
+        <p>Criptografia em Cifra de César ou em Base64</p>
+    </header>
+    <main>
+        <div>
+            <h1>Execute sua criptografia abaixo, digitando sua mensagem</h1>
+            <textarea name="entrada" id="entrada" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <h2>Selecione o sistema</h2>
+            <select name="seletor" id="options">
+            <option value="true" id="base"> Base64</option>
+            <option value="false" id="cifra"> Cifra de Cesar</option>
+            </select>
+            <div> 
+                <input type="radio" id="codificar" name="cod">
+                <label for="codificar"> Codificar </label>
+                <input type="radio" id="decodificar" name="cod">
+                <label for="decodificar"> Decodificar </label>
+        </div>
+            <h3>Selecione a chave</h3>
+            <input type="number" name="acrescimo" id="acrescenta" min="1">
+            <br>
+    <button id="botao"> CLIQUE AQUI </button>
+    <br>
+    <p id="saida"></p>
+    </main> 
+    <footer class="rodape">
+        Página para fins educacionais desenvolvida por Laís Peixoto. Resilia 2021 &COPY;
+    </footer>
 </body>
-
-<footer class="rodape">
-    Página para fins educacionais desenvolvida por Laís Peixoto. Resilia 2021 &COPY;
-</footer>
-
 </html>
